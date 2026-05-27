@@ -97,7 +97,13 @@
     letter-spacing: -0.02em;
     overflow: hidden;
   }
-  /* If you add a real photo: .avatar-inner img { width:100%; height:100%; object-fit:cover; border-radius:50%; } */
+  .avatar-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }
 
   /* ── Name block ── */
   .name-block {
@@ -281,7 +287,9 @@
 
   <!-- Avatar -->
   <div class="avatar-ring">
-    <div class="avatar-inner">AK</div>
+    <div class="avatar-inner">
+      <img src="/avatar.jpg" alt="Akshat Khandelwal" />
+    </div>
   </div>
 
   <!-- Name -->
